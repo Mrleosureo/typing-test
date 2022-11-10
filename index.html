@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>typing tes</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="stats">
+			<p>Time: <span id="timer">0s</span></p>
+			<p>Mistakes: <span id="mistakes">0</span></p>
+		</div>
+		<div id="quote" onmousedown="return false" onselectstart="return false"></div>
+		<textarea rows="3" id="quote-input" placeholder="Ketik Disini Untuk Mulai..."></textarea>
+		<button id="start-test" onclick="startTest()">Mulai</button>
+		<button id="stop-test" onclick="displayResult()">Berhenti</button>
+		<div class="result">
+			<h3>Hasil</h3>
+			<div class="wrapper">
+				<p>Accuracy: <span id="accuracy"></span></p>
+				<p>Speed: <span id="wpm"></span></p>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
